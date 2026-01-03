@@ -1,84 +1,49 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" href="./22.svg" type="image/svg+xml">
-  <link rel="preload" href="./cake.svg" type="image/svg+xml">
-  <link rel="preload" href="./main.svg" as="image" type="image/svg+xml">
-  <title>Happy 22nd Jenny :)</title>
-  <meta name="description" content="Love you a lot 😙 –Preston">
-
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    body {
-      overflow: auto;
-      background: transparent;
-    }
-
-    .container {
-      position: relative;
-    }
-
-    img,
-    object {
-      display: block;
-      max-width: none;
-    }
-
-    @media (max-aspect-ratio: 1/1) {
-
-      img,
-      object {
-        height: 100vh;
-        width: auto;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        cursor: url('./cake.svg'), auto;
       }
-    }
 
-    @media (min-aspect-ratio: 1/1) {
-
-      img,
-      object {
-        width: 100vw;
-        height: auto;
+      body {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background: transparent;
       }
-    }
 
-    .svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 250ms linear;
-    }
+      img {
+        display: block;
+        max-width: none;
+        max-height: none;
+      }
 
-    .svg.loaded {
-      opacity: 1;
-    }
-  </style>
-</head>
+      @media (max-aspect-ratio: 1/1) {
+        img {
+          height: 100vh;
+          width: auto;
+        }
+      }
 
-<body>
-  <div class="container">
-    <img src="./main.webp" alt="pixelated you and pixelated me" />
-
-    <object data="./main.svg" type="image/svg+xml" class="svg" id="svg"></object>
-  </div>
-
-  <script>
-    const svg = document.getElementById('svg');
-
-    svg.addEventListener('load', () => {
-      svg.classList.add('loaded');
-    });
-  </script>
-</body>
-
+      @media (min-aspect-ratio: 1/1) {
+        img {
+          width: 100vw;
+          height: auto;
+        }
+      }
+    </style>
+    <link rel="icon" href="./22.svg" type="image/svg+xml">
+    <link rel="preload" href="./cake.svg" type="image/svg+xml">
+    <link rel="preload" href="./main.svg" as="image" type="image/svg+xml">
+    <title>Happy 22nd Jenny :)</title>
+    <meta name="description" content="Love you a lot 😙 –Preston">
+  </head>
+  <body>
+    <img src="./main.svg" alt="you and me" />
+  </body>
 </html>
