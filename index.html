@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        cursor: url('./cake.svg'), auto;
+      }
+
+      body {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background: transparent;
+      }
+
+      img {
+        display: block;
+        max-width: none;
+        max-height: none;
+      }
+
+      @media (max-aspect-ratio: 1/1) {
+        img {
+          height: 100vh;
+          width: auto;
+        }
+      }
+
+      @media (min-aspect-ratio: 1/1) {
+        img {
+          width: 100vw;
+          height: auto;
+        }
+      }
+    </style>
+    <link rel="icon" href="./22.svg" type="image/svg+xml">
+    <link rel="preload" href="./cake.svg" type="image/svg+xml">
+    <link rel="preload" href="./main.svg" as="image" type="image/svg+xml">
+    <title>Happy 22nd Jenny :)</title>
+    <meta name="description" content="Love you a lot 😙 –Preston">
+  </head>
+  <body>
+    <img src="./main.svg" alt="you and me" />
+  </body>
+</html>
